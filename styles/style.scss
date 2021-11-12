@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    width: 100%;
+}
+
+.up-btn{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 20px;
+    z-index: 9999;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3964da;
+    color: white;
+}
+
+@media only screen and (max-width: 1280px){
+    
+    .main{
+        .main-cont{
+            flex-direction: column;
+            p{
+                margin-top: 40px;
+            }
+
+            img{
+                width: 55%;
+            }
+        }
+    }
+
+    .articles{
+    
+        article{
+            width: 25vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero-shape{
+        display: none;
+    }    
+
+    .hero-wrapper{
+        text-align: center;
+    }
+
+    .hero img{
+        display: none;
+    }
+
+    
+}
+
+@media only screen and (max-width: 840px) {
+    .resp{
+        flex-direction: column;
+
+        .container{
+            margin: 20px 0;
+        }
+    }
+
+    .footer-top{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        .footer-sec{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .socials ul{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media only screen and (max-width: 720px){
+    .articles{
+        flex-direction: column;
+        align-items: center;
+        
+        article{
+            margin: 20px 0;
+            width: 300px;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .hero-wrapper h1{
+        font-size: 7.5vw;
+    }
+
+    .hero-wrapper p{
+        font-size: 5vw;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    nav a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    nav i{
+        margin-right: 0px;
+    }
+}
